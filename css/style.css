@@ -1,0 +1,13 @@
+.carousel-item{
+height: 65vh;
+background: norepeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.small_headding{
+  display:block;
+  font-size:.5em;
+}
