@@ -197,6 +197,14 @@ footer{
   .jumbotron h1{
     font-size:1.5em;
   }
+  h2{
+    font-size:1.2em;
+  }
+
+  #formWrap form .btn-success{
+    margin-bottom: 0.5em;
+  }
+
 }
 
 
