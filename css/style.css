@@ -194,6 +194,9 @@ footer{
 }
 
 @media (max-width: 767px){
+  .jumbotron h1{
+    font-size:1.5em;
+  }
 }
 
 
