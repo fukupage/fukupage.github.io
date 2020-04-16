@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>fukupage.github.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="sW2yBaoYIJvH6IOi6LLZ6mxrivA4L3f51mgcy-lt7gY" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -15,168 +14,568 @@
     ■ナビゲーション
     startbootstrap.comよりスニペットを書き写し
   -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">fukupage.github.io</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="./">fukupage.github.io</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">Menu</span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <li class="item">
+            <a class="link nav-link" data-hash="home" href="/">Home</a>
           </li>
           <li class="item">
-            <a class="nav-link" href="#">About</a>
+            <a class="link nav-link" data-hash="about" href="/">About</a>
           </li>
           <li class="item">
-            <a class="nav-link" href="#">Work</a>
+            <a class="link nav-link" data-hash="photo" href="/">Photos</a>
           </li>
           <li class="item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="link nav-link" data-hash="works" href="/">Works</a>
           </li>
           <li class="item">
-            <a class="nav-link" href="#">Twitter</a>
-          </li>
-          <li class="item">
-            <a class="nav-link" href="#">Facebook</a>
+            <a class="link nav-link" data-hash="contact" href="/">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header>
-    <!-- スライド本体 -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <!-- 下部のインジケーター -->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <!-- 画像の指定とテキスト -->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active"
-          style="background-image:url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080');">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">最初のスライド</h3>
-            <p class="lead">最初の文章です。</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image:url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080');">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">最初のスライド</h3>
-            <p class="lead">最初の文章です。</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image:url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080');">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">最初のスライド</h3>
-            <p class="lead">最初の文章です。</p>
-          </div>
-        </div>
-      </div>
-      <!-- 左右のスライド -->
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
   </header>
   <main>
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <h1 class="font-weight-light text-center">fukupage.github.io</h1>
-            <p class="mt-3">
-              ここは勉強したものをおいておく場所です。主にフロントエンド関係の勉強をしていますが、いつかはCMSのようなものを作ってみたいです。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="top_first_headding" class="container">
-      <div class="row">
-        <div class="col-md-10 offset-md-1">
-          <h1 class="font-weight-light text-center my-4">制作事例<small
-              class="small_headding my-2">これまでプライベートで制作したものです。</small></h1>
-        </div>
-      </div>
-      <article class="row mb-5">
-        <div class="col-md-7">
-          <a href="https://bowworks.biz/japan-whaling-association/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="https://bowworks.biz/SITE/wp-content/uploads/2019/08/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2019-08-25-11.49.12-1024x578.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>日本捕鯨協会Webサイト</h3>
-          <p>この制作事例は2019年の1月に公開されました日本捕鯨協会様のホームページの事例です。</p>
-          <a class="btn btn-primary" href="https://bowworks.biz/japan-whaling-association/">詳しくはこちら</a>
-        </div>
-      </article>
-
-      <article class="row mb-5">
-        <div class="col-md-7">
-          <a href="https://bowworks.biz/japan-whaling-association/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="https://bowworks.biz/SITE/wp-content/uploads/2017/01/icrWebSite_screenShot.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>一般財団法人<br>日本鯨類研究所WEBサイト<br>トップページ</h3>
-          <p>この制作事例は、2016年11月頃に制作した、一般財団法人 日本鯨類研究所様のWebサイトのトップページ二点についてです。</p>
-          <a class="btn btn-primary" href="https://bowworks.biz/icr-website-toppage-2016-11/">詳しくはこちら</a>
-        </div>
-      </article>
-
-      <article class="row mb-5">
-        <div class="col-md-7">
-          <a href="https://bowworks.biz/japan-whaling-association/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="https://bowworks.biz/SITE/wp-content/uploads/2019/08/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2019-08-26-13.11.04-1024x566.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>職業訓練での習作</h3>
-          <p>これは2017年3月に制作した、職業訓練の際の制作物です。2人1組になり、お互いの注文にそってホームページを制作するという授業で、僕への注文は「パン教室とカフェが一緒になったようなお店」ということで、このような1ページのホームページとなりました。</p>
-          <a class="btn btn-primary" href="https://bowworks.biz/p-c-m/">詳しくはこちら</a>
-        </div>
-      </article>
-    </section>
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1 text-center">
-          <p>
-            ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。</p>
-          <p>
-            ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。
-          </p>
-          <p>
-            ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。ここは勉強したものをおいておく場所です。
-          </p>
+        <!-- in the box ---->
+        <!-- 1st box -->
+
+        <div id="home" class="contents_article col-md-10 offset-md-1 mt-5">
+          <section class="my-2">
+            <div class="text-center mx-auto jumbotron pt-3 pb-2">
+              <h1 class="mb-3">fukupage.github.io</h1>
+              <p>
+                ここは勉強したものをおいておく場所です。<br>主にフロントエンド関係の勉強をしていますが、いつかはCMSのようなものを作ってみたいです。<br>年齢的なものやブランクなどもありますが、よろしくお願いいたします。
+              </p>
+            </div>
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-md-10 offset-md-1 pb-2">
+                  <h2 class="text-center">
+                    このページについて
+                  </h2>
+                  <p>
+                    このページは、自分が勉強した結果をアウトプットするために制作しました。<br>
+                    今時、GitHubくらいやっていないと恥ずかしいと思い、遅ればせながらページを立ち上げました。<br>
+                    今はまだ、いろんなサイトや参考書の写経がメインになると思いますが、いづれは自分で考えたプログラムをデプロイしたいです。
+                  </p>
+                </div>
+                <div class="col-md-10 offset-md-1 pb-2">
+                  <h2 class="text-center">
+                    目標としていること
+                  </h2>
+                  <p>
+                    もうかなり昔から言い続けていて、18年ほど経っても未だに実現していないのですが、いつかは独自のCMSを作りたいと思っています。<br>
+                    理由は、僕がホームページ作りの楽しさを知ったのはガイアックス系簡単ホームページというサービスやMovableTypeというシステムのおかげで、流石に同じようなものは作ることはできないけれど、自分なりにその恩返しができればと思っているからです。
+                  </p>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                  <h2 class="text-center">
+                    ポートフォリオについて
+                  </h2>
+                  <p>
+                    このサイトの<a href="index.html#works">Works</a>にいくつか制作事例を一部記載していますが、<a href="https://bowworks.biz/">BowWorks.biz</a>にはさらにいくつかの制作事例を紹介しています。<br>
+                    また、PDF版のポートフォリオもございますので、<a href="index.html#contact">Contact</a>からお問い合わせください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
+
+        <!--/ 1st box -->
+        <!-- +-+-+-+-+- -->
+        <!-- 2nd box -->
+        <div id="about" class="contents_article col-md-10 offset-md-1 mt-5">
+          <section class="my-5">
+            <div class="text-center mx-auto jumbotron pt-3 pb-2">
+              <h1 class="text-center">About</h1>
+              <h2 class="text-center">中の人について</h2>
+              <p class="my-3">
+                中の人は「福田礼（ふくだれい）」といいます。冗談みたいな名前ですが、本名です。<br>
+                以前はハンドルネームと使い分けていましたが、本名に統一することにしました。
+              </p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <div class="container inner_box">
+              <h2 class="text-center pt-5 pb-3">略歴的な話</h2>
+              <div class="row">
+                <div class="col-lg-4 align-self-center">
+                  <img class="img-fluid rounded img_shadow about_img" src="https://bowworks.heteml.net/fukupage_github_io/img/about_001.jpg" alt="自分の写真">
+                </div>
+                <div class="col-lg-8">
+                  <p class="my-3">
+                    愛知県の高校を卒業し、専門学校で工業デザインを専攻。<br>
+                    一度就職しましたがゲーム制作を志し上京。<br>
+                    新聞配達をしながら、ゲームデザインやシナリオの勉強をしている中で、DTPを知り進路変更。<br>
+                    その後、風俗雑誌の編集、パッケージの広告のデザイナーなどを経て、Web系のデザイナー（兼コーダー）に。<br>
+                    健康上の理由でホームページ制作会社を2019年5月に退職し、今後の生き方を模索している中で、フロントエンドエンジニアになるためにCOVID-19禍の世の中で自己の研鑽に励んでいます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3 inner_box">
+              <h2 class="text-center pt-5 pb-3">趣味や興味など</h2>
+              <div class="row">
+                <div class="col-lg-4 ">
+                  <img class="img-fluid rounded img_shadow about_img" src="https://bowworks.heteml.net/fukupage_github_io/img/about_002.jpg" alt="鯨舟">
+                </div>
+                <div class="col-lg-8 ">
+                  <p class="mt-3">
+                    昔はゲームと読書が好きでした。<br>
+                    現在は、特に趣味だと言えるものはありませんが、暇なときはYouTubeなどで動画の視聴していることが多いです。<br>
+                    よく見るジャンルは、ゲーム実況とジャンクPCの修理動画、そしてプログラミング入門の動画です。</p>
+                    <p class="mt-3">
+                      興味は捕鯨問題や捕鯨文化、鯨食に関してです。<br>
+                    昔から鯨ベーコンは大好きで、捕鯨問題を意識し始めたのは2011年頃。<br>
+                    その後、和歌山県の太地町（悪名高い「The Cove」の舞台）に行くことが増え、いつかは移住したいと思っています（いつになるやら）。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-5 inner_box">
+              <h2 class="text-center pt-5 pb-3">スキル的な話</h2>
+              <div class="row">
+                <dov class="col-lg-4">
+                  <img class="img-fluid rounded img_shadow about_img" src="https://bowworks.heteml.net/fukupage_github_io/img/about_003.jpg" alt="制作物">
+                </dov>
+                <dov class="col-lg-8">
+                  <p class="mt-3">
+                    デザイン系の仕事を数多くしてきました（雑誌デザイン・パッケージデザイン・広告デザイン・Webデザイン）。<br>
+                    HTMLやCSSなどのコーディングも携わりましたが、1年ほどブランクがあるため現在リハビリ中です。<br>
+                    JavaやPHPなども学習経験はありますが、関数あたりがうまく自分で理解できず、現在は取り返すべくJavaScriptを学習中です。
+                  </p>
+                  <p class="mt-3">
+                    デザイン以外では、雑誌の編集作業に携わったことがあるため、印刷に関わる知識が若干あります。<br>
+                    また、工場に勤務したことがあり、工具などの取り扱い経験もあります。<br>
+                    何度か肉体労働もしてきましたが、現在は年齢が年齢ということもあり体力はありません。<br>
+                  </p>
+                </dov>
+              </div>
+            </div>
+            <div class="container mt-5 inner_box">
+              <h2 class="text-center pt-5 pb-3">使ってきた道具の話</h2>
+              <div class="row">
+                <div class="col-lg-4">
+                  <img class="img-fluid rounded img_shadow about_img" src="https://bowworks.heteml.net/fukupage_github_io/img/about_004.jpg" alt="愛車のラパン">
+                </div>
+                <div class="col-lg-8">
+                  <p class="my-3">
+                    パソコンはMacとWindowsを使っています。<br>
+                    Linuxにも興味があり、中古PCにLinux Mintをインストールはしてみましたが、うまく導入できていません。
+                  </p>
+                  <p class="my-3">
+                    アプリケーションは、主にPhotoshopやIllustrator、DreamWeaverなど。<br>
+                    他にPageMaker・QuarkExpress・Director・Flashなどの経験があります。<br>
+                    エディタはJEdit→サクラエディター→SublimeText→VSCode。<br>
+                    IDE（NetBeans）を使っていた時期もあります。
+                  </p>
+                  <p class="my-3">
+                    現在の愛車は初代ラパンです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--/ 2nd box -->
+        <!-- +-+-+-+-+- -->
+        <!-- 3rd box -->
+        <div id="photo" class="contents_article col-md-10 offset-md-1 mt-5">
+          <section class="my-5">
+            <div class="text-center mx-auto jumbotron pt-3 pb-2">
+              <h1 class="text-center">MyPhoto</h1>
+              <h2 class="text-center">中の人の目線</h2>
+              <p class="my-3">
+                こちらは、中の人が日常を風景を撮影した写真です。<br>
+                素人がスマートフォンで撮影して、リサイズ（一部モザイク）以外は無補正で掲載しているものです。<br>
+                よろしければ、ご覧ください。
+              </p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <div class="container inner_box pt-3">
+              <div class="row pt-5">
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_021.jpg" alt="岐阜 墨俣城">
+                  <p class="text-center">岐阜 墨俣城</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_022.jpg" alt="新宮市 神倉神社">
+                  <p class="text-center">新宮市 神倉神社</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_023.jpg" alt="第1京丸と夕日">
+                  <p class="text-center">第1京丸と夕日</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_024.jpg" alt="ある冬の名鉄新一宮駅前">
+                  <p class="text-center">ある冬の名鉄新一宮駅前</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_025.jpg" alt="冬のiビル シビックテラス">
+                  <p class="text-center">冬のiビル シビックテラス</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_026.jpg" alt="太地町 常渡">
+                  <p class="text-center">太地町 常渡</p>
+                </div>
+
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_019.jpg" alt="某社求人用のカット">
+                  <p class="text-center">某社求人用のカット</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_020.jpg" alt="第1京丸">
+                  <p class="text-center">第1京丸</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_030.jpg" alt="太地町 畠尻湾の日の出">
+                  <p class="text-center">太地町 畠尻湾の日の出</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_029.jpg" alt="自宅マンションより">
+                  <p class="text-center">自宅マンションより</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_028.jpg" alt="太地町 ドルフィンリゾート">
+                  <p class="text-center">太地町 ドルフィンリゾート</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_027.jpg" alt="名古屋市 大須観音">
+                  <p class="text-center">名古屋市 大須観音</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_017.jpg" alt="太地町 あわい">
+                  <p class="text-center">太地町 あわい</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_016.jpg" alt="太地町 梶取崎">
+                  <p class="text-center">太地町 梶取崎</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_015.jpg" alt="太地町 鯨のモニュメント">
+                  <p class="text-center">太地町 鯨のモニュメント</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_014.jpg" alt="自分のMacbook Pro">
+                  <p class="text-center">自分のMacbook Pro</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_013.jpg" alt="作成したポートフォリオ">
+                  <p class="text-center">作成したポートフォリオ</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_018.jpg" alt="冬の名古屋市 栄">
+                  <p class="text-center">冬の名古屋市 栄</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_007.jpg" alt="妻籠 雛飾り">
+                  <p class="text-center">妻籠 雛飾り</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_008.jpg" alt="飛鳥神社 元旦の獅子舞">
+                  <p class="text-center">飛鳥神社 元旦の獅子舞</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_009.jpg" alt="ある時期の自宅デスク周り">
+                  <p class="text-center">ある時期の自宅デスク周り</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_010.jpg" alt="某社の窓からの景色">
+                  <p class="text-center">某社の窓からの景色</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_011.jpg" alt="金沢駅前">
+                  <p class="text-center">金沢駅前</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_012.jpg" alt="名古屋駅コンコース">
+                  <p class="text-center">名古屋駅コンコース</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_004.jpg" alt="名古屋市科学館">
+                  <p class="text-center">名古屋市科学館</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_005.jpg" alt="初島行きフェリーから見た海">
+                  <p class="text-center">初島行きフェリーから見た海</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_006.jpg" alt="ある年の桜">
+                  <p class="text-center">ある年の桜</p>
+                </div>
+
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_001.jpg" alt="神津島の夕日">
+                  <p class="text-center">神津島の夕日</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_002.jpg" alt="帰宅途中の夕日">
+                  <p class="text-center">帰宅途中の夕日</p>
+                </div>
+                <div class="col-md-4 py-3">
+                  <img class="img-fluid rounded img_shadow photo_img" src="https://bowworks.heteml.net/fukupage_github_io/img/images_003.jpg" alt="鳥羽水族館のペンギン">
+                  <p class="text-center">鳥羽水族館のペンギン</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--/ 3rd box -->
+        <!-- +-+-+-+-+- -->
+        <!-- 4th box -->
+
+        <div id="works" class="contents_article col-md-10 offset-md-1 mt-5">
+          <section class="my-5">
+            <div class="text-center mx-auto jumbotron pt-3 pb-2">
+              <h1 class="text-center">Works</h1>
+              <h2 class="text-center">制作事例</h2>
+              <p class="my-3">
+                これまでプライベートで制作したものの一部で、リンク先は自分の本サイトの紹介ページです。
+              </p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <div class="container inner_box pt-3">
+
+              <article class="row mb-5 pt-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/japan-whaling-association/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_001.png" alt="日本捕鯨協会Webサイト">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>日本捕鯨協会Webサイト</h3>
+                  <p>2019年の1月に公開されました日本捕鯨協会様のホームページです。</p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/japan-whaling-association/">詳しくはこちら</a>
+                </div>
+              </article>
+
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/icr-website-toppage-2016-11/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_002.jpg" alt="一般財団法人 日本鯨類研究所WEBサイト トップページ">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>一般財団法人<br class="sm_none">日本鯨類研究所WEBサイト<br class="sm_none">トップページ</h3>
+                  <p>2016年11月頃に制作した一般財団法人 日本鯨類研究所Webサイトのトップページです。</p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/icr-website-toppage-2016-11/">詳しくはこちら</a>
+                </div>
+              </article>
+
+              
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/p-c-m/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                    src="https://bowworks.heteml.net/fukupage_github_io/img/works_003.png"
+                    alt="職業訓練での習作「パン・カフェ・マフィン」">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>職業訓練での習作</h3>
+                  <p>
+                    2017年3月に職業訓練の卒業制作です。2人1組でお互いの注文にそってホームページを制作しました。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/p-c-m/">詳しくはこちら</a>
+                </div>
+              </article>
+              
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/fukupage_tk_portfolio/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                    src="https://bowworks.heteml.net/fukupage_github_io/img/works_004.jpg"
+                    alt="旧ポートフォリオページ">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>旧ポートフォリオページ</h3>
+                  <p>
+                    2017年2月に自己紹介とポートフォリオを兼ねたWebページです。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/fukupage_tk_portfolio/">詳しくはこちら</a>
+                </div>
+              </article>
+              
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/taiji-whale-museum-a5pamphlet-2016-6/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_005.jpg"
+                      alt="くじらの博物館 パンフレット">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>くじらの博物館 パンフレット</h3>
+                  <p>
+                    2016年6月に制作した、くじらの博物館の営業用パンフレットです。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/taiji-whale-museum-a5pamphlet-2016-6/">詳しくはこちら</a>
+                </div>
+              </article>
+
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/tamukai_mel_a4_1302/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_006.jpg"
+                      alt="田向商店 リーフレット">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>田向商店 リーフレット</h3>
+                  <p>
+                    これは2013年3月に制作した、マリンエコラベルの啓蒙のためのリーフレットです。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/tamukai_mel_a4_1302/">詳しくはこちら</a>
+                </div>
+              </article>
+
+              <article class="row mb-5">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/shimaneko_a4_1307/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_007.jpg"
+                      alt="初島しまねこリーフレット">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>初島しまねこリーフレット</h3>
+                  <p>
+                    2013年7月頃に制作した静岡県熱海市初島の地域猫「しまねこ」の保護活動に関するリーフレットについてです。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/shimaneko_a4_1307/">詳しくはこちら</a>
+                </div>
+              </article>
+
+              <article class="row">
+                <div class="col-md-6">
+                  <a href="https://bowworks.biz/taigeo_poster/">
+                    <img class="img-fluid rounded mb-3 img_shadow"
+                      src="https://bowworks.heteml.net/fukupage_github_io/img/works_008.jpg"
+                      alt="たいジオ。ポスター">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>たいジオ。ポスター</h3>
+                  <p>
+                    この事例は、2015年2月頃に制作したポスターに関するものです。
+                  </p>
+                  <a class="btn btn-primary mx-3" href="https://bowworks.biz/taigeo_poster/">詳しくはこちら</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!--/ 4th box -->
+        <!-- 5th box -->
+        <div id="contact" class="contents_article col-md-10 offset-md-1 mt-5">
+          <section class="my-5">
+            <div class="text-center mx-auto jumbotron pt-3 pb-2">
+              <h1 class="text-center">Contact</h1>
+              <h2 class="text-center">お問い合わせ</h2>
+              <p class="my-3">
+                このページや中の人へのお問い合わせやご相談は、こちらのフォームからご送信ください。<br>
+                おそらく、2・3日くらいでお返事を差し上げると思いますが、もしそれでも返事がない場合は、忙しいか忘れているかなので、再度こちらからメッセージをお送りいただくか、SNS（<a href="https://twitter.com/bowworksbiz/" target="_blank">Twitter</a>・<a href="https://www.facebook.com/bowworks.biz/" target="_blank">Facebook</a>）経由でご連絡をください。
+              </p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <div class="container inner_box pt-3">
+              <div class="row mt-5">
+                <div id="formWrap" class="contact">
+                  <h2 class="text-center">お問い合わせ</h2>
+                  <p class="text-center">下記フォームに必要事項を入力後、確認ボタンを押してください。
+                    送信の際は外部のサーバーに遷移します（フォームのプログラムがPHPのため）。
+                  </p>
+                  <form method="post" action="https://bowworks.heteml.net/fukupage_github_io/mail/mail.php">
+                    <div class="form-group row">
+                      <label for="title" class="col-md-3 col-form-label text-md-right">ご用件</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="" class="col-md-3 col-form-label text-md-right">お名前<span> ※必須</span></label>
+                      <div class="col-md-9">
+                        <input class="form-control" type="text" name="お名前" />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="" class="col-md-3 col-form-label text-md-right">Mail（半角）<span> ※必須</span></label>
+                      <div class="col-md-9">
+                        <input class="form-control" type="mail" name="Email">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="" class="col-md-3 col-form-label text-md-right">お問い合わせ内容</label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" class="col-md-10" name="お問い合わせ内容"></textarea>
+                      </div>
+                    </div>
+                    <div class="mx-auto">
+                      <div class="mx-auto col-md-6 offset-md-3 text-md-right">
+                        <button type="submit" class="btn btn-success col-md-5" value="確認">送信する</button>
+                        <button type="reset" class="btn btn-light col-md-5">リセット</button>
+                      </div>
+                    </div>
+                  </form>
+                  <p class="text-center mt-3">※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <!--/ 5th box -->
+
+      </div><!-- / in the box -->
     </div>
   </main>
-  <footer class="py-5 bg-dark">
+  <footer class="py-2">
     <div class="container">
       <div class="row">
         <div class="col-md-10 text-center offset-md-1">
           <a href="https://bowworks.biz" target="_blank" class="mt-5 mx-auto text-white">
-            BowWorks.biz
+            &copy Rei Fukuda / BowWorks.biz
           </a>
         </div>
       </div>
     </div>
   </footer>
   </main>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

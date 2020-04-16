@@ -1,3 +1,94 @@
+
+@import url('//fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+
+/*
+  body関係
+*/
+
+body{
+  background-image: url(https://bowworks.heteml.net/fukupage_github_io/img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/*
+  フォント関係の指定
+*/
+h1, h2, h3, a, p, label, input, textarea{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding-left:0.5em;
+  padding-right:0.5em; 
+}
+
+h1{
+  font-size:2.2em;
+  border-bottom: 1px dotted #666;
+  padding-bottom: 0.5em;
+}
+
+h2{
+  font-size:1.5em;
+}
+section .inner_box h2.about_h2{
+  margin-top: 3.0em;
+  padding-bottom: 1.0em;
+}
+
+.jumbotron h2{
+  margin-top:0.5em;
+}
+
+
+h3{
+  font-size:1.3em;
+}
+
+p{
+  padding-left:0.75em;
+  padding-right:0.75em;
+  line-height: 1.75em;
+}
+
+section > .container > .row > div > p > a,
+section .jumbotron > p > a{
+  color:#633;
+  text-decoration: underline;
+}
+
+section .container article .btn-primary{
+  background-color:rgba(125, 125, 125, 0.5);
+  border: none;
+  color: #333;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/*
+モバイル表示時のメニューボタンを調整
+*/
+.navbar > .container > .navbar-toggler{
+  border: 1px solid #fff!important;
+  padding:0.3em;
+  width: 2.0em;
+}
+
+.navbar > .container > .navbar-toggler > .navbar-toggler-icon{
+  color: white;
+  opacity: 1.0;
+  font-size: 0.3em;
+  display: block;
+}
+  
+/*
+  とりあえず、最初は全体を非表示にしておく
+*/
+
+.contents_article{
+  display: none;
+}
+
 .carousel-item{
 height: 65vh;
 background: norepeat center center scroll;
@@ -11,3 +102,98 @@ background-size: cover;
   display:block;
   font-size:.5em;
 }
+
+/*
+  ナビゲーション部分
+*/
+nav.navbar{
+  background-color: rgba(50, 50, 50, .5);
+}
+
+a.navbar-brand,
+a.link{
+  color: #fff!important;
+}
+
+/*
+  #HOMEのjumbotron
+*/
+
+.jumbotron{
+  background-color: rgba(175, 175, 100, 0.2);
+}
+
+.jumbotron p{
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/*
+  記事本文部分
+*/
+main section .container{
+  background:rgba(255,255,255,0.3);
+  border-radius: 0.25em;
+}
+
+main .container{
+  margin: 5em auto;
+}
+
+main .containe .container{
+  background:rgba(255,255,255,0.8)!important;
+}
+.inner_box{
+  padding-bottom:3.0em;
+}
+
+.img_shadow{
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+/*
+  写真のキャプション
+*/
+#photo.contents_article section .container.inner_box .text-center{
+  margin-top: 0.5em;
+}
+
+/*
+  お問い合わせフォーム
+*/
+
+#formWrap{
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/*
+  フッター部分
+*/
+
+footer{
+  background-color: rgba(50, 50, 50, .5);
+  position :fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* モバイル時 -----------------------------------*/
+@media (max-width: 991px){
+  #about .about_img,
+  #photo .photo_img{
+    display:block;
+    width: 80% !important;;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .sm_none{
+    display:none;
+  }
+}
+
+@media (max-width: 767px){
+}
+
+
